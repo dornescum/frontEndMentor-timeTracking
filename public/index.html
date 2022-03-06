@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/public/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- displays site properly based on user's device -->
+
+    <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <link href="/public/output.css" rel="stylesheet">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+
+</head>
+<body class="bg-myBlue-100 font-rubik text-lg">
+<main class="min-h-screen flex items-center justify-center mx-4 2xl:mx-10 my-8 2xl:mt-8 2xl:mb-4 ">
+    <div class='tabs bg-white'>
+
+        <div class="flex ">
+            <div class="info  h-[500px] w-60 bg-myBlue-200">
+                <div class=" flex flex-col items-start 2xl:px-8 2xl:py-8 bg-myBlue-300 rounded-lg z-10">
+                       <img src="./images/image-jeremy.png" alt="jeremy" class="h-24 w-24 rounded-full">
+                        <p class="text-sm text-myBlue-500 2xl:py-6">Report for</p>
+                        <p class="text-4xl text-white 2xl:py-1">Jeremy Robson</p>
+                </div>
+                <ul class="2xl:px-8 2xl:py-6 cursor-pointer text-white transition duration-300 ease-out hover:ease-in capitalize">
+                    <li class='trigger py-2 active' data-target='#daily'>daily</li>
+                    <li class='trigger py-2' data-target='#weekly'>weekly</li>
+                    <li class='trigger py-2' data-target='#monthly'>monthly</li>
+                </ul>
+            </div>
+            <div class=" m-2 ">
+                <div class='content active grid grid-cols-4 gap-4' id='daily'>
+                    <div>
+                        <h6>daily work</h6>
+                        <p> 32 hrs</p>
+                        <p>Last week 36hrs</p>
+                    </div>
+                 <div>
+                        <h6>daily work</h6>
+                        <p> 32 hrs</p>
+                        <p>Last week 36hrs</p>
+                    </div>
+                 <div>
+                        <h6>daily work</h6>
+                        <p> 32 hrs</p>
+                        <p>Last week 36hrs</p>
+                    </div>
+                 <div>
+                        <h6>daily work</h6>
+                        <p> 32 hrs</p>
+                        <p>Last week 36hrs</p>
+                    </div>
+                 <div>
+                        <h6>daily work</h6>
+                        <p> 32 hrs</p>
+                        <p>Last week 36hrs</p>
+                    </div>
+                 <div>
+                        <h6>daily work</h6>
+                        <p> 32 hrs</p>
+                        <p>Last week 36hrs</p>
+                    </div>
+
+                </div>
+                <div class='content' id='weekly'>
+                    <h6>daily</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, unde. WEEKLY</p>
+                </div>
+                <div class='content' id='monthly'>
+                    <h6>daily</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, unde. MONTHLY</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</main>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+</div>
+<script src="index.js" type="module"></script>
+</body>
+</html>
+<!--npx tailwindcss -i ./src/input.css -o ./public/output.css &#45;&#45;watch-->
