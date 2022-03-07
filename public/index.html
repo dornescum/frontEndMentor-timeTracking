@@ -8,8 +8,8 @@
 
     <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
 
@@ -30,16 +30,16 @@
     </style>
 
 </head>
+<!--bg-myBlue-100-->
 <body class="bg-myBlue-100 font-rubik text-lg">
-<main class="min-h-screen flex items-center justify-center mx-4 2xl:mx-10 my-8 2xl:mt-8 2xl:mb-4 ">
-    <div class='tabs bg-white'>
-
-        <div class="flex ">
-            <div class="info  h-[500px] w-60 bg-myBlue-200">
+<main class="min-h-screen lg:flex lg:items-center lg:justify-center mx-1 2xl:mx-10 my-8 2xl:mt-8 2xl:mb-4 text-lg">
+    <div class='tabs mx-4 2xl:mx-0'>
+        <div class="flex flex-col md:flex-row">
+            <div class="info  h-[495px] w-full lg:w-60 2xl:w-60 bg-myBlue-200 rounded-lg mb-8">
                 <div class=" flex flex-col items-start 2xl:px-8 2xl:py-8 bg-myBlue-300 rounded-lg z-10">
-                       <img src="./images/image-jeremy.png" alt="jeremy" class="h-24 w-24 rounded-full">
-                        <p class="text-sm text-myBlue-500 2xl:py-6">Report for</p>
-                        <p class="text-4xl text-white 2xl:py-1">Jeremy Robson</p>
+                    <img alt="jeremy" class="h-24 w-24 rounded-full" src="./images/image-jeremy.png">
+                    <p class="text-sm text-myBlue-500 2xl:py-6">Report for</p>
+                    <p class="text-4xl text-white 2xl:py-1">Jeremy Robson</p>
                 </div>
                 <ul class="2xl:px-8 2xl:py-6 cursor-pointer text-white transition duration-300 ease-out hover:ease-in capitalize">
                     <li class='trigger py-2 active' data-target='#daily'>daily</li>
@@ -47,60 +47,482 @@
                     <li class='trigger py-2' data-target='#monthly'>monthly</li>
                 </ul>
             </div>
-            <div class=" m-2 ">
-                <div class='content active grid grid-cols-4 gap-4' id='daily'>
-                    <div>
-                        <h6>daily work</h6>
-                        <p> 32 hrs</p>
-                        <p>Last week 36hrs</p>
-                    </div>
-                 <div>
-                        <h6>daily work</h6>
-                        <p> 32 hrs</p>
-                        <p>Last week 36hrs</p>
-                    </div>
-                 <div>
-                        <h6>daily work</h6>
-                        <p> 32 hrs</p>
-                        <p>Last week 36hrs</p>
-                    </div>
-                 <div>
-                        <h6>daily work</h6>
-                        <p> 32 hrs</p>
-                        <p>Last week 36hrs</p>
-                    </div>
-                 <div>
-                        <h6>daily work</h6>
-                        <p> 32 hrs</p>
-                        <p>Last week 36hrs</p>
-                    </div>
-                 <div>
-                        <h6>daily work</h6>
-                        <p> 32 hrs</p>
-                        <p>Last week 36hrs</p>
-                    </div>
+            <div class="md:mx-8 2xl:mx-4 h-[500px]">
+                <div class='content active w-full' id='daily'>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-14">
+                        <article class="bg-lightRedWork rounded-2xl  duration-300 ease-out cursor-pointer
+                         lg:h-52  2xl:h-52 w-full  2xl:w-60">
+                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-work.svg');
+                             background-position: 92% 35%">
+<!--                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-work.svg">-->
+                            </div>
+                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-full 2xl:w-60 z-50">
+                                <ul class="flex justify-between px-6 pt-8 pb-4 2xl:px-6 2xl:pt-8 2xl:pb-4">
+                                    <li>Work D</li>
+                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">
+                                        <div class="flex">
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p class="px-6 py-4 2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>
+                                    <p class="px-6 2xl:px-6 text-base">Last week -36hrs</p>
+                                </div>
+                            </div>
+                        </article>
 
+
+                        <!--2-->
+                      <article class="bg-softBlue rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-full 2xl:w-60">
+                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-play.svg');
+                             background-position: 92% 35%">
+<!--                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-play.svg">-->
+                            </div>
+                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-full  2xl:w-60 z-50 ">
+                                <ul class="flex justify-between px-6 pt-8 pb-4">
+                                    <li>Play</li>
+                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">
+                                        <div class="flex">
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>
+                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--                        3   -->
+                      <article class="bg-lightRedStudy rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-full 2xl:w-60">
+                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-study.svg');
+                             background-position: 92% 35%">
+<!--                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-study.svg">-->
+                            </div>
+                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-full  2xl:w-60 z-50 ">
+                                <ul class="flex justify-between px-6 pt-8 pb-4">
+                                    <li>Study</li>
+                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">
+                                        <div class="flex">
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>
+                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--                        4   -->
+                      <article class="bg-limeGreen rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-full 2xl:w-60">
+                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-exercise.svg');
+                             background-position: 92% 35%">
+<!--                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-exercise.svg">-->
+                            </div>
+                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-full  2xl:w-60 z-50 ">
+                                <ul class="flex justify-between px-6 pt-8 pb-4">
+                                    <li>Exercise</li>
+                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">
+                                        <div class="flex">
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>
+                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--                        5-->
+                      <article class="bg-violet rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-full 2xl:w-60">
+                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-social.svg');
+                             background-position: 92% 35%">
+<!--                                <img alt="icon work" class="h-16 absolute z-0 pr-5" src="./images/icon-social.svg">-->
+                            </div>
+                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-full  2xl:w-60 z-50 ">
+                                <ul class="flex justify-between px-6 pt-8 pb-4">
+                                    <li>Social</li>
+                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">
+                                        <div class="flex">
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>
+                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!--                        6-->
+                      <article class="bg-softOrange rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-full 2xl:w-60">
+                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-self-care.svg');
+                             background-position: 92% 35%">
+                            </div>
+                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-full 2xl:w-60 z-50 ">
+                                <ul class="flex justify-between px-6 pt-8 pb-4">
+                                    <li>Self Care</li>
+                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">
+                                        <div class="flex">
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>
+                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>
+                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+<!--                        <article-->
+<!--                                class="bg-myBlue-200 p-3 rounded hover:bg-myBlue-400 duration-300 ease-out cursor-pointer h-60">-->
+<!--                            <div class="bg-lightRedStudy">-->
+<!--                                <img alt="icon work" src="./images/icon-work.svg">-->
+<!--                            </div>-->
+<!--                            <ul class="flex justify-between">-->
+<!--                                <li>Work</li>-->
+<!--                                <li>...</li>-->
+<!--                            </ul>-->
+<!--                            <div>-->
+<!--                                <p class="2xl:3xl">32 <span>hrs</span></p>-->
+<!--                                <p>Last week -36hrs</p>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+
+                    </div>
                 </div>
+<!--                weekly-->
                 <div class='content' id='weekly'>
-                    <h6>daily</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, unde. WEEKLY</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-14">
+<!--                        <article class="bg-lightRedWork rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-work.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-work.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Work W</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+
+<!--                        &lt;!&ndash;2&ndash;&gt;-->
+<!--                        <article class="bg-softBlue rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-play.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-play.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Play</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash;                        3   &ndash;&gt;-->
+<!--                        <article class="bg-lightRedStudy rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-study.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-study.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Study</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash;                        4   &ndash;&gt;-->
+<!--                        <article class="bg-limeGreen rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-exercise.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-exercise.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Exercise</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash;                        5&ndash;&gt;-->
+<!--                        <article class="bg-violet rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-social.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-16 absolute z-0 pr-5" src="./images/icon-social.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Social</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+
+<!--                        &lt;!&ndash;                        6&ndash;&gt;-->
+<!--                        <article class="bg-softOrange rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-self-care.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Self Care</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+<!--                        -->
+
+                    </div>
                 </div>
+<!--                monthly-->
                 <div class='content' id='monthly'>
-                    <h6>daily</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, unde. MONTHLY</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-14">
+<!--                        <article class="bg-lightRedWork rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-work.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-work.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Work M</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+
+<!--                        &lt;!&ndash;2&ndash;&gt;-->
+<!--                        <article class="bg-softBlue rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-play.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-play.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Play</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash;                        3   &ndash;&gt;-->
+<!--                        <article class="bg-lightRedStudy rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-study.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-study.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Study</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash;                        4   &ndash;&gt;-->
+<!--                        <article class="bg-limeGreen rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-exercise.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-14 absolute z-0 pr-5" src="./images/icon-exercise.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Exercise</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash;                        5&ndash;&gt;-->
+<!--                        <article class="bg-violet rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-social.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                                &lt;!&ndash;                                <img alt="icon work" class="h-16 absolute z-0 pr-5" src="./images/icon-social.svg">&ndash;&gt;-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Social</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+
+<!--                        &lt;!&ndash;                        6&ndash;&gt;-->
+<!--                        <article class="bg-softOrange rounded-2xl  duration-300 ease-out cursor-pointer h-52 w-60">-->
+<!--                            <div class="h-10 flex justify-end bg-no-repeat" style="background-image: url('./images/icon-self-care.svg');-->
+<!--                             background-position: 92% 35%">-->
+<!--                            </div>-->
+<!--                            <div class="bg-myBlue-200 hover:bg-myBlue-400 h-52 rounded-2xl h-48 w-60 z-50 absolute">-->
+<!--                                <ul class="flex justify-between px-6 pt-8 pb-4">-->
+<!--                                    <li>Self Care</li>-->
+<!--                                    <li class="flex items-center justify-center cursor-pointer hover:animate-pulse transition ease-out hover:text-red-500">-->
+<!--                                        <div class="flex">-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1 mr-0.5 bg-slate-50 rounded-full"></div>-->
+<!--                                            <div class="h-1 w-1  bg-slate-50 rounded-full"></div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div>-->
+<!--                                    <p class="2xl:py-2 2xl:px-6 2xl:text-5xl font-thin">32<span>hrs</span></p>-->
+<!--                                    <p class="2xl:px-6 text-base">Last week -36hrs</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </article>-->
+                    </div>
                 </div>
             </div>
-
 
         </div>
     </div>
 
 
 </main>
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-</div>
+<!--<div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--</div>-->
 <script src="index.js" type="module"></script>
 </body>
 </html>

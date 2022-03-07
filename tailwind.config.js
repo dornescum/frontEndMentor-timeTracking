@@ -8,7 +8,7 @@ module.exports = {
         'rubik': ['"Rubik"', 'sans-serif'],
       },
       colors:{
-        lightRedWok:"#ff8c66",
+        lightRedWork:"#ff8c66",
         lightRedStudy:"#ff5c7c",
         softBlue:"#56c2e6",
         limeGreen:"#4acf81",
