@@ -22,6 +22,9 @@ module.exports = {
           500:"#bdc1ff"
         }
       },
+      screens: {
+        'xs': '320px',
+      },
     },
   },
   plugins: [],
