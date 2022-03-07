@@ -1,7 +1,10 @@
 import Tabs from './tabs.js';
-import data from './data.json' assert { type: "json" };
+import data from './data.json' assert {type: "json"};
+import newData from "./newData.js";
 
-console.log(data);
+console.log(newData);
+
+
 
 const daily = document.getElementById('daily');
 const weekly = document.getElementById('weekly');
@@ -9,12 +12,12 @@ const monthly = document.getElementById('monthly');
 const dailyContent = document.getElementById('daily-content');
 const weeklyContent = document.getElementById('weekly-content');
 const monthlyContent = document.getElementById('monthly-content');
-// console.log(monthly);
 
 const tabs = new Tabs(document.querySelector('.tabs'));
 tabs.init();
 
-monthlyContent.innerHTML = data.map(item=>{
+
+monthlyContent.innerHTML = newData.map(item => {
 	return `    <article class= "${item.class} rounded-2xl  duration-300 ease-out cursor-pointer
                          lg:h-52  2xl:h-52 w-full  2xl:w-60" style="background:${item.color}">
                             <div class="h-10 flex justify-end bg-no-repeat ${item.class}" style="background-image: url(${item.img});
@@ -39,9 +42,10 @@ monthlyContent.innerHTML = data.map(item=>{
                                 </div>
                             </div>
                         </article>
-`
+`;
 }).join(' ');
-weeklyContent.innerHTML = data.map(item=>{
+
+weeklyContent.innerHTML = newData.map(item => {
 	return `    <article class= "${item.class} rounded-2xl  duration-300 ease-out cursor-pointer
                          lg:h-52  2xl:h-52 w-full  2xl:w-60" style="background:${item.color}">
                             <div class="h-10 flex justify-end bg-no-repeat ${item.class}" style="background-image: url(${item.img});
@@ -66,9 +70,10 @@ weeklyContent.innerHTML = data.map(item=>{
                                 </div>
                             </div>
                         </article>
-`
+`;
 }).join(' ');
-dailyContent.innerHTML = data.map(item=>{
+
+dailyContent.innerHTML = newData.map(item => {
 	return `    <article class= "${item.class} rounded-2xl  duration-300 ease-out cursor-pointer
                          lg:h-52  2xl:h-52 w-full  2xl:w-60" style="background:${item.color}">
                             <div class="h-10 flex justify-end bg-no-repeat ${item.class}" style="background-image: url(${item.img});
@@ -93,5 +98,5 @@ dailyContent.innerHTML = data.map(item=>{
                                 </div>
                             </div>
                         </article>
-`
+`;
 }).join(' ');
