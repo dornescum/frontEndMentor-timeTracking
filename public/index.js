@@ -34,7 +34,7 @@ monthlyContent.innerHTML = data.map(item=>{
                                 <div class="flex flex-row justify-between md:flex-col ">
                                     <p class="px-6 py-4 2xl:py-2 2xl:px-6 text-2xl 2xl:text-5xl font-thin">
                                         ${item.timeframes.monthly.current}<span>hrs</span></p>
-                                    <p class="pr-6 py-4 2xl:px-6 2xl:pt-0 2xl:pb-1 2xl:px-6 text-base flex items-center justify-center
+                                    <p class="px-6 py-4 2xl:px-6 2xl:pt-0 2xl:pb-1 2xl:px-6 text-base flex items-center justify-center
                                         md:block">Last week - ${item.timeframes.monthly.previous}hrs</p>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ weeklyContent.innerHTML = data.map(item=>{
                                 <div class="flex flex-row justify-between md:flex-col ">
                                     <p class="px-6 py-4 2xl:py-2 2xl:px-6 text-2xl 2xl:text-5xl font-thin">
                                         ${item.timeframes.weekly.current}<span>hrs</span></p>
-                                    <p class="pr-6 py-4 2xl:px-6 2xl:pt-0 2xl:pb-1 2xl:px-6 text-base flex items-center justify-center
+                                    <p class="px-6 py-4  2xl:px-6 2xl:pt-0 2xl:pb-1 2xl:px-6 text-base flex items-center justify-center
                                         md:block">Last week - ${item.timeframes.weekly.previous}hrs</p>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ dailyContent.innerHTML = data.map(item=>{
                                 <div class="flex flex-row justify-between md:flex-col ">
                                     <p class="px-6 py-4 2xl:py-2 2xl:px-6 text-2xl 2xl:text-5xl font-thin">
                                         ${item.timeframes.daily.current}<span>hrs</span></p>
-                                    <p class="pr-6 py-4 2xl:px-6 2xl:pt-0 2xl:pb-1 2xl:px-6 text-base flex items-center justify-center
+                                    <p class="px-6 py-4 2xl:px-6 2xl:pt-0 2xl:pb-1 2xl:px-6 text-base flex items-center justify-center
                                         md:block">Last week - ${item.timeframes.daily.previous}hrs</p>
                                 </div>
                             </div>
